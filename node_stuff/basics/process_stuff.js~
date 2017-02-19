@@ -1,0 +1,12 @@
+/* This is to demonstrate some of the stuff you can do with the PROCESS module of node.js */
+
+/* NOTE: since it is global to node.js, the process stuff doesn't require a "require" */
+
+
+process.on('beforeExit', function() {
+    console.log('At the moment before I exit...')
+});
+
+process.on('exit', function(code) {
+    console.log('Exiting with code: ${code}');
+});
