@@ -10,6 +10,8 @@
 (function() {
     'use strict';
 
+    const os = require('os');
+
     /***************************************************************
     * Set up some hooks to handle when the program is about to end 
     ***************************************************************/
@@ -60,8 +62,17 @@
     * Show some system info
     ***************************************************************/
     var showSysInfo = function() {
-	printMsg('The pid is ' + process.pid);
+	printMsg('The pid is          ' + process.pid);
 	printMsg('Running on platform ' + process.platform);
+	printMsg('os arch             ' + os.arch());
+	printMsg('os platform         ' + os.platform());
+	printMsg('os release          ' + os.release());
+	printMsg('home directory      ' + os.homedir());
+	printMsg('hostname            ' + os.hostname());
+	printMsg('os free system memory... ' + os.freemem());
+	printMsg('Info on the cpus...'); console.log(os.cpus());
+	printMsg('machine loadavg: ' ); console.log(os.loadavg());
+	
     }
     
     /***************************************************************
