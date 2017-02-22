@@ -1,0 +1,14 @@
+{
+  "name": "command_line_prompt",
+  "version": "1.0.0",
+  "description": "example of prompting the user for input on the command line",
+  "main": "command_line_prompt.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "charles.gates@gmail.com",
+  "license": "ISC",
+  "dependencies": {
+    "prompt": "^1.0.0"
+  }
+}
