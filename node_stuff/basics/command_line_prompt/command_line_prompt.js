@@ -1,7 +1,11 @@
 #!/usr/bin/env nodejs
 
-/* This is to demonstrate how to use the prompting */
-
+/****************************************************
+ * This is to demonstrate how to use the prompting 
+ *
+ * See lots of other features and examples at
+ *    https://www.npmjs.com/package/prompt
+ ****************************************************/
 (function() {
     'use strict';
     var prompt = require('prompt');
@@ -29,7 +33,7 @@
 	 *  example prompting for a password
 	 ******************************************/
 	// need to set a property to hide the typed characters
-	var properties = [{name: 'username'}, {name: 'password', hidden: true}];
+	var properties = [{name: 'username'}, {name: 'password', hidden: true, replace: '*'}];
 	prompt.get(properties, function(err, theResult) {
             if (!err) {
 		console.log('The username and password are...');
