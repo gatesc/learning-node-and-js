@@ -69,6 +69,7 @@
         var fs = require('fs');
         var Console = require('console');
 
+        // Connect console to a output file stream
         var outFilename = './outFile.txt';
         var outStream = fs.createWriteStream(outFilename);
         var outFile = new console.Console(outStream);
