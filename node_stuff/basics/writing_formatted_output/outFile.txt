@@ -1,0 +1,6 @@
+model      extColor intColor type  year owned
+-----      -------- -------- ----  ---- -----
+honda      blue     tan      car   1978 5 
+toyota     red      tan      car   1990 3 
+ford       black    gray     car   1991 12
+seaquest   white    white    boat  1987 5 

@@ -1,0 +1,14 @@
+{
+  "name": "writing_formatted_output",
+  "version": "1.0.0",
+  "description": "a small test program to output text to a file",
+  "main": "writing_formatted_output.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "sprintf-js": "^1.0.3"
+  }
+}
