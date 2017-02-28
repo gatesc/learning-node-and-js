@@ -61,8 +61,29 @@
 	}
 	console.log('Another nested object...');
 	console.log(obj5);
+
+	// Example storing an array in the associative array
+	console.log('Storing an array in a javascript assocative array (ie, object)');
+	var obj6 = {
+	    base_ints: [1, 2, 3, 4, 5, 6, 7, 8, 9, 10],
+	    even_ints: [2, 4, 6, 8, 10],
+	    odd_ints:  [1, 3, 5, 7, 9]
+	}
+	console.log('The obj is...'); console.log(obj6);
+
+
+	// showing arrays using a function
+	showAssocArray("obj6", obj6);
     }
 
+    var showAssocArray = function(assocArrName, theAssocArray) {
+	console.log("Showing associative array..." + assocArrName);
+	for (var k in theAssocArray) {
+	    console.log(assocArrName + "[" + k + "] = " + theAssocArray[k]);
+	}
+    }
+
+    
     /* call main */
     main();
     
