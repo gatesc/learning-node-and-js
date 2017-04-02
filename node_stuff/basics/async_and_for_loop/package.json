@@ -1,0 +1,11 @@
+{
+  "name": "async_and_for_loop",
+  "version": "1.0.0",
+  "description": "a test to understand for loops and callbacks in a node.js program",
+  "main": "async_and_for_loop.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "",
+  "license": "ISC"
+}
