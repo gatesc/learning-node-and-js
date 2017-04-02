@@ -9,18 +9,14 @@
      /***********************************************
      * 
      **********************************************/
-    var wasteTime = function(input) {
+    var wasteTime = function(input, cb) {
 	if ((input % 2) == 0) {
-	    for (var i=0; i<25000; i++) {
-		for (var j=0; j<10000; j++) {
-		    var x=i+j/2;
-		}
-	    }
+	    setTimeout(cb, input * 1000);
 	}
 	else {
 	    /* do nothing */
+	    return cb(null, true);
 	}
-	return;
     }
     
     /***********************************************
@@ -35,10 +31,11 @@
      * 
      **********************************************/
     var doSomething = function(theVal, cb) {
-	wasteTime(theVal);
-	var x = theVal * 2;
-	printIt(theVal, x);
-	return cb(null, x);
+	wasteTime(theVal, function(err, result) {
+	    var x = theVal * 2;
+	    printIt(theVal, x);
+	    return cb(null, x);
+	});
     }
     
     /***********************************************
